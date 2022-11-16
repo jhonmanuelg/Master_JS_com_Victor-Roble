@@ -1,34 +1,35 @@
-*{
+* {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
 }
 
-:root{
+:root {
     --color-fondo-h1: rgb(245, 182, 57);
     --color-background: #333;
     --color-primari-text: #fff;
 }
-.clearfix{
+
+.clearfix {
     float: none;
     clear: both;
 }
 
-body{
+body {
     background-image: url("../img/hojas.jpg");
     background-attachment: fixed;
 }
 
-#global{
+#global {
     width: 65%;
     margin: 0px auto;
     margin-top: 30px;
     padding: 20px;
     background-color: azure;
     box-shadow: 0px 0px 6px rgb(9, 9, 9);
- 
+
 }
 
-.logo{
+.logo {
     font-family: "Verdane", "Arial";
     font-size: 35px;
     letter-spacing: 4px;
@@ -43,33 +44,33 @@ body{
     text-transform: uppercase;
 }
 
-#menu{
-    font-family: Arial, Helvetica;    
+#menu {
+    font-family: Arial, Helvetica;
     text-transform: uppercase;
     width: 100%;
     margin-bottom: 20px;
-    
+
 }
 
-#menu ul{
+#menu ul {
     background: var(--color-background);
-    line-height: 45px;    
+    line-height: 45px;
     list-style: none;
 }
 
 
-#menu ul li{
+#menu ul li {
     height: 46px;
     display: inline-block;
     transition: all 300ms;
 }
 
-#menu ul li:hover{
+#menu ul li:hover {
     background-color: var(--color-fondo-h1);
     border-right: 4px solid rgb(255, 135, 16);
 }
 
-#menu a{
+#menu a {
     font-weight: 800;
     text-decoration: none;
     display: block;
@@ -78,43 +79,43 @@ body{
     padding-right: 30px;
 }
 
-#menu a:hover{
+#menu a:hover {
     color: var(--color-background);
-    
+
 }
 
-#posts{
+#posts {
     margin-top: 10px;
- width: 60%;
- float: left;
- font-family: Arial, Helvetica;
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica;
 }
 
-.post{
+.post {
     padding: 7px;
 }
 
-.post h2{
+.post h2 {
     font-size: 30px;
     font-weight: 700;
     color: var(--color-background);
 }
 
-.post .date{
+.post .date {
     display: block;
     color: gainsboro;
     margin-top: 7px;
 }
 
-.post p{
-   margin-top: 10px;
-   margin-bottom: 20px;
-   line-height: 22px;
-   text-align: justify;
-   color: var(--color-background); 
+.post p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--color-background);
 }
 
-.button-more{
+.button-more {
     width: 70px;
     text-align: center;
     font-size: 14px;
@@ -126,6 +127,73 @@ body{
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 20px;
-    
 
+
+}
+
+/* ======================= sidebar ======================= */
+
+#sidebar {
+    font-family: Arial, Helvetica;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: var(--color-background);
+
+    background: url("../img/lines.png") repeat-x;
+}
+
+#sidebar h4 span {
+    background-color: var(--color-primari-text);
+    padding: 5px;
+}
+
+#sidebar img {
+    width: 100%;
+}
+
+#sidebar p {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 5px;
+    border-radius: 2px;
+    border-color: 1px solid var(--color-background);
+    width: 89%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background-color: var(--color-fondo-h1);
+    color: var(--color-primari-text);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===================== footer ======================= */
+
+footer{
+    font-family: Arial, Helvetica;
+    color: var(--color-fondo-h1);
+    height: 47px;
+    background: var(--color-background);
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+    width: 65%;
 }
