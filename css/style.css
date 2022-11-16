@@ -196,4 +196,11 @@ footer{
     margin-top: 50px;
     line-height: 47px;
     width: 65%;
+    
+}
+
+/* ===================== slider ======================= */
+
+.box-wrapper, .bx-viewport{
+    height: 250px !important;
 }
