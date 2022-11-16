@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+
+:root{
+    --color-fondo-h1: rgb(245, 182, 57);
+    --color-background: #333;
+    --color-primari-text: #fff;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+body{
+    background-image: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: azure;
+    box-shadow: 0px 0px 6px rgb(9, 9, 9);
+ 
+}
+
+.logo{
+    font-family: "Verdane", "Arial";
+    font-size: 35px;
+    letter-spacing: 4px;
+    background-color: var(--color-fondo-h1);
+    color: var(--color-primari-text);
+    line-height: 75px;
+    text-align: center;
+    width: 389px;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: Arial, Helvetica;    
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#menu ul{
+    background: var(--color-background);
+    line-height: 45px;    
+    list-style: none;
+}
+
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+    background-color: var(--color-fondo-h1);
+    border-right: 4px solid rgb(255, 135, 16);
+}
+
+#menu a{
+    font-weight: 800;
+    text-decoration: none;
+    display: block;
+    color: var(--color-fondo-h1);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#menu a:hover{
+    color: var(--color-background);
+    
+}
+
+#posts{
+    margin-top: 10px;
+ width: 60%;
+ float: left;
+ font-family: Arial, Helvetica;
+}
+
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-background);
+}
+
+.post .date{
+    display: block;
+    color: gainsboro;
+    margin-top: 7px;
+}
+
+.post p{
+   margin-top: 10px;
+   margin-bottom: 20px;
+   line-height: 22px;
+   text-align: justify;
+   color: var(--color-background); 
+}
+
+.button-more{
+    width: 70px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    padding: 15px;
+    background-color: var(--color-fondo-h1);
+    color: var(--color-primari-text);
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+
+}
