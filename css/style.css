@@ -4,7 +4,9 @@
 }
 
 :root {
-    --color-fondo-h1: rgb(245, 182, 57);
+    --color-fondo-h1: #B7CC7C;
+    --color-fond0-blue: #14ac9a;
+    --color-fondo-red: #C61F16;
     --color-background: #333;
     --color-primari-text: #fff;
 }
@@ -29,11 +31,11 @@ body {
 
 }
 
-.logo {
+#logo {
     font-family: "Verdane", "Arial";
     font-size: 35px;
     letter-spacing: 4px;
-    background-color: var(--color-fondo-h1);
+    /* background-color: var(--color-fondo-h1); */
     color: var(--color-primari-text);
     line-height: 75px;
     text-align: center;
@@ -65,11 +67,6 @@ body {
     transition: all 300ms;
 }
 
-#menu ul li:hover {
-    background-color: var(--color-fondo-h1);
-    border-right: 4px solid rgb(255, 135, 16);
-}
-
 #menu a {
     font-weight: 800;
     text-decoration: none;
@@ -79,10 +76,6 @@ body {
     padding-right: 30px;
 }
 
-#menu a:hover {
-    color: var(--color-background);
-
-}
 
 #posts {
     margin-top: 10px;
@@ -121,14 +114,12 @@ body {
     font-size: 14px;
     display: block;
     padding: 15px;
-    background-color: var(--color-fondo-h1);
+    
     color: var(--color-primari-text);
     font-weight: 700;
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 20px;
-
-
 }
 
 /* ======================= sidebar ======================= */
@@ -175,7 +166,7 @@ form input[type="password"] {
     margin-top: 5px;
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
     background-color: var(--color-fondo-h1);
     color: var(--color-primari-text);
     padding: 10px;
@@ -185,9 +176,8 @@ form input[type="submit"]{
 
 /* ===================== footer ======================= */
 
-footer{
-    font-family: Arial, Helvetica;
-    color: var(--color-fondo-h1);
+footer {
+    font-family: Arial, Helvetica;    
     height: 47px;
     background: var(--color-background);
     margin: 0px auto;
@@ -196,11 +186,46 @@ footer{
     margin-top: 50px;
     line-height: 47px;
     width: 65%;
-    
+
 }
 
 /* ===================== slider ======================= */
 
-.box-wrapper, .bx-viewport{
+.box-wrapper,
+.bx-viewport {
     height: 250px !important;
+}
+
+#select-them{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+    border: none;
+}
+
+#to-green,
+#to-blue,
+#to-red{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--color-primari-text);
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-green{
+    background: var(--color-fondo-h1);
+}
+
+#to-blue{
+    background: var(--color-fond0-blue);
+}
+
+#to-red{
+    background: var(--color-fondo-red);
 }

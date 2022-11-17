@@ -1,0 +1,41 @@
+
+body {
+    background-image: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+
+#logo {
+   
+    background-color: var(--color-fondo-h1);
+    color: var(--color-primari-text);
+    
+}
+
+
+#menu ul li:hover {
+    background-color: var(--color-fondo-h1);
+    border-right: 4px solid #eeffc0
+}
+
+
+#menu a:hover {
+    color: var(--color-background);
+
+}
+
+
+.button-more {
+    
+    background-color: var(--color-fondo-h1);
+    color: var(--color-primari-text);
+  
+}
+
+form input[type="submit"] {
+    background-color: var(--color-fondo-h1);
+    
+}
+
+footer{
+    color: var(--color-fondo-h1);
+}

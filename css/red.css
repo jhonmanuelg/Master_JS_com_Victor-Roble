@@ -1,0 +1,45 @@
+body {
+    background-image: url("../img/rojo.jpg");
+    background-attachment: fixed;
+}
+
+#logo {
+    background-color: var(--color-fondo-red);
+    color: var(--color-primari-text);
+    
+}
+
+
+#menu ul li:hover {
+    background-color: var(--color-fondo-red);
+    border-right: 4px solid rgb(244, 172, 172);
+}
+
+#menu a {
+    
+    color: var(--color-fondo-red);
+    
+}
+
+
+#menu a:hover {
+    color: var(--color-background);
+
+}
+
+
+.button-more {
+    
+    background-color:var(--color-fondo-red);
+    color: var(--color-primari-text);
+  
+}
+
+form input[type="submit"] {
+    background-color: var(--color-fondo-red);
+    
+}
+
+footer{
+    color: var(--color-fondo-red);
+}

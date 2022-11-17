@@ -1,0 +1,43 @@
+body {
+    background-image: url("../img/cielo.jpg");
+    background-attachment: fixed;
+}
+
+#logo {
+   
+    background-color:  var(--color-fond0-blue);
+    color: var(--color-primari-text);
+    
+}
+
+
+#menu ul li:hover {
+    background-color:  var(--color-fond0-blue);
+    border-right: 4px solid #9bf0e6;
+}
+#menu a {    
+    color:  var(--color-fond0-blue);
+    
+}
+
+#menu a:hover {
+    color: var(--color-background);
+
+}
+
+
+.button-more {
+    
+    background-color:  var(--color-fond0-blue);
+    color: var(--color-primari-text);
+  
+}
+
+form input[type="submit"] {
+    background-color:  var(--color-fond0-blue);
+    
+}
+
+footer{
+    color: var(--color-fond0-blue);
+}
