@@ -11,7 +11,7 @@ $(document).ready(function () {
   var posts = [
     {
       title: "Titulo del Articulo 1",
-      Date:
+      date:
         "Plublicado el dia: " +
         moment().date() +
         " de " +
@@ -23,7 +23,7 @@ $(document).ready(function () {
     },
     {
       title: "Titulo del Articulo 2",
-      Date:
+      date:
         "Plublicado el dia: " +
         moment().date() +
         " de " +
@@ -35,7 +35,7 @@ $(document).ready(function () {
     },
     {
       title: "Titulo del Articulo 3",
-      Date:
+      date:
         "Plublicado el dia: " +
         moment().date() +
         " de " +
@@ -47,7 +47,7 @@ $(document).ready(function () {
     },
     {
       title: "Titulo del Articulo 4",
-      Date:
+      date:
         "Plublicado el dia: " +
         moment().date() +
         " de " +
@@ -59,7 +59,7 @@ $(document).ready(function () {
     },
     {
       title: "Titulo del Articulo 5",
-      Date:
+      date:
         "Plublicado el dia: " +
         moment().date() +
         " de " +
@@ -71,7 +71,7 @@ $(document).ready(function () {
     },
     {
         title: "Titulo del Articulo 6",
-        Date:
+        date:
           "Plublicado el dia: " +
           moment().date() +
           " de " +
@@ -93,7 +93,7 @@ $(document).ready(function () {
       <a href="#" class="button-more">
         Leer mas
       </a>
-    </article>; 
+    </article> 
     `;
     $("#posts").append(post);
   });
@@ -101,16 +101,26 @@ $(document).ready(function () {
   // Selector del theme
   var theme = $("#theme")
   $("#to-green").click(function(){
-    theme.attr("href", "css/green.css")
+    theme.attr("href", "css/green.css");
   });
 
   $("#to-blue").click(function(){
-    theme.attr("href", "css/blue.css")
+    theme.attr("href", "css/blue.css");
   });
 
   $("#to-red").click(function(){
-    theme.attr("href", "css/red.css")
+    theme.attr("href", "css/red.css");
   });
+
+  // Scroll arriba de la web
+  $(".subir").click(function(e){
+    e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    return false
+  })
 
 
 });

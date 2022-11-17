@@ -43,3 +43,13 @@ form input[type="submit"] {
 footer{
     color: var(--color-fondo-red);
 }
+
+footer a{    
+    color:var(--color-fondo-red);
+}
+
+footer a:hover{
+    background-color: var(--color-fondo-red); 
+    border-right: 4px solid #faa1a1;
+    color: var(--color-background);
+}

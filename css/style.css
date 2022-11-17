@@ -5,9 +5,9 @@
 
 :root {
     --color-fondo-h1: #B7CC7C;
-    --color-fond0-blue: #14ac9a;
-    --color-fondo-red: #C61F16;
-    --color-background: #333;
+    --color-fond0-blue: #4985c9;
+    --color-fondo-red: #ff493f;
+    --color-background: rgb(0, 0, 0);
     --color-primari-text: #fff;
 }
 
@@ -51,6 +51,7 @@ body {
     text-transform: uppercase;
     width: 100%;
     margin-bottom: 20px;
+    
 
 }
 
@@ -95,8 +96,9 @@ body {
 }
 
 .post .date {
+    font-weight: 500;
     display: block;
-    color: gainsboro;
+    color: rgb(221, 221, 221);
     margin-top: 7px;
 }
 
@@ -186,8 +188,22 @@ footer {
     margin-top: 50px;
     line-height: 47px;
     width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 
 }
+
+footer a{
+    text-decoration: none; 
+    padding: 0px 5px;
+    font-weight: 700;    
+}
+
+
+
+
 
 /* ===================== slider ======================= */
 
